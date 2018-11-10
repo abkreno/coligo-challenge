@@ -41,9 +41,9 @@ module.exports = {
         }
       }]
     }, {
-      test: /\.css$/,
+      test: /\.(css|scss)$/,
       use: extractPlugin.extract({
-        use: ['css-loader'],
+        use: ['css-loader', 'sass-loader', 'postcss-loader'],
         fallback: 'style-loader'
       })
     }]

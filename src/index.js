@@ -1,4 +1,4 @@
 import img from './assets/img/study.png';
-import './styles/main.css';
+import './styles/main.scss';
 
 console.log(img);
