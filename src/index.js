@@ -1,4 +1,4 @@
-import img from './assets/img/study.png';
-import './styles/main.scss';
+// import 'babel-polyfill';
 
-console.log(img);
+import App from "./App";
+

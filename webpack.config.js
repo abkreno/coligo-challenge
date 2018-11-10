@@ -44,8 +44,14 @@ module.exports = {
       test: /\.(css|scss)$/,
       use: extractPlugin.extract({
         use: ['css-loader', 'sass-loader', 'postcss-loader'],
-        fallback: 'style-loader'
+        fallback: 'style-loader',
       })
+    }, {
+      test: /\.(js|jsx)$/,
+      exclude: /node_modules/,
+      use: {
+        loader: 'babel-loader',
+      },
     }]
-  }
+  },
 };
