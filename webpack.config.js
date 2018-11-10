@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
   entry: "./index.js",
@@ -19,7 +20,8 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: 'index.html',
-    })
+    }),
+    new CleanWebpackPlugin(['public']), // cleanup public folder e.g (when files are removed)
   ],
   module: {
     rules: [{
