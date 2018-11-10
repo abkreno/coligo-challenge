@@ -1,9 +1,14 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+
+const extractPlugin = new ExtractTextPlugin({
+  filename: './style.css'
+});
 
 module.exports = {
-  entry: "./index.js",
+  entry: './index.js',
   mode: process.env.NODE_ENV || 'development',
   output: {
     filename: 'bundle.js',
@@ -22,6 +27,7 @@ module.exports = {
       template: 'index.html',
     }),
     new CleanWebpackPlugin(['public']), // cleanup public folder e.g (when files are removed)
+    extractPlugin,
   ],
   module: {
     rules: [{
@@ -36,7 +42,10 @@ module.exports = {
       }]
     }, {
       test: /\.css$/,
-      use: ['style-loader', 'css-loader']
+      use: extractPlugin.extract({
+        use: ['css-loader'],
+        fallback: 'style-loader'
+      })
     }]
   }
 };
