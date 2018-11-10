@@ -34,6 +34,9 @@ module.exports = {
           outputPath: './assets/',
         }
       }]
+    }, {
+      test: /\.css$/,
+      use: ['style-loader', 'css-loader']
     }]
   }
 };
