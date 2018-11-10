@@ -21,4 +21,17 @@ module.exports = {
       template: 'index.html',
     })
   ],
+  module: {
+    rules: [{
+      test: /\.(jpg|png|gif|svg)$/,
+      use: [
+      {
+        loader: 'file-loader',
+        options: {
+          name: '[name].[ext]',
+          outputPath: './assets/',
+        }
+      }]
+    }]
+  }
 };
