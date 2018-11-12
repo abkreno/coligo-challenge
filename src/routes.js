@@ -1,8 +1,8 @@
 import React from 'react';
 import { Route, IndexRoute } from 'react-router';
 import MainLayout from './layouts/MainLayout';
-import Home from './components/Home';
-import Dashboard from './components/Dashboard';
+import Home from './pages/Home';
+import Dashboard from './pages/Dashboard';
 
 export default (store) => {
   const requireAuth = (nextState, replaceState) => {
