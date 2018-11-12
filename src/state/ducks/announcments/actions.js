@@ -4,12 +4,12 @@ export const fetchAnnouncments = () => ({
   type: types.FETCH_ANNOUNCEMENTS_BEGIN,
 });
 
-export const setAnnouncements = announcements => ({
+export const setAnnouncments = announcments => ({
   type: types.SET_ANNOUNCEMENTS,
-  announcements,
+  announcments,
 });
 
 export default {
   fetchAnnouncments,
-  setAnnouncements,
+  setAnnouncments,
 };

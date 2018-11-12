@@ -1,12 +1,12 @@
 import React from 'react';
-import AnnouncementList from '../containers/AnnouncementList';
+import AnnouncmentList from '../containers/AnnouncmentList';
 
 const MainLayout = () => (
   <div>
     <div>
       <h2>Welcome to Coligo</h2>
     </div>
-    <AnnouncementList />
+    <AnnouncmentList />
   </div>
 );
 

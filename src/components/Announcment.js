@@ -1,14 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Announcement = ({ text }) => (
+const Announcment = ({ text }) => (
   <li>
     {text}
   </li>
 );
 
-Announcement.propTypes = {
+Announcment.propTypes = {
   text: PropTypes.string.isRequired,
 };
 
-export default Announcement;
+export default Announcment;
