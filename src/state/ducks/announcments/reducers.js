@@ -7,7 +7,7 @@ state: {
 */
 const announcment = (state, action) => {
   switch (action.type) {
-    case types.ADD_ANNOUNCEMENT:
+    case types.ADD_ANNOUNCMENT:
       return {
         id: action.announcment.id,
         text: action.announcment.text,
@@ -19,9 +19,9 @@ const announcment = (state, action) => {
 
 const announcments = (state = [], action) => {
   switch (action.type) {
-    case types.ADD_ANNOUNCEMENT:
+    case types.ADD_ANNOUNCMENT:
       return [...state, announcment(undefined, action)];
-    case types.SET_ANNOUNCEMENTS:
+    case types.SET_ANNOUNCMENTS:
       return action.announcments;
     default:
       return state;
