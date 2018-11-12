@@ -1,13 +1,17 @@
 import React from 'react';
-import AnnouncementList from '../containers/AnnouncementList';
+import PropTypes from 'prop-types';
 
-const MainLayout = () => (
+const MainLayout = ({ children }) => (
   <div>
     <div>
       <h2>Welcome to Coligo</h2>
     </div>
-    <AnnouncementList />
+    {children}
   </div>
 );
+
+MainLayout.propTypes = {
+  children: PropTypes.object.isRequired,
+};
 
 export default MainLayout;

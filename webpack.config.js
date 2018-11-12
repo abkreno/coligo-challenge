@@ -13,6 +13,7 @@ module.exports = {
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'public'),
+    publicPath: '/',
   },
   devServer: {
     contentBase: path.resolve(__dirname, 'public/assets'),
@@ -20,6 +21,7 @@ module.exports = {
     open: true, // to open the browser tab automatically
     port: 8080,
     compress: true,
+    historyApiFallback: true,
   },
   context: path.resolve(__dirname, 'src'),
   plugins: [

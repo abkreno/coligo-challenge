@@ -1,14 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider as ReduxProvider } from 'react-redux';
+import { syncHistoryWithStore } from 'react-router-redux';
+import { Router, browserHistory } from 'react-router';
 import configureStore from './state/store';
-import MainLayout from './layouts/MainLayout';
+import getRoutes from './routes';
+import './styles/main.scss';
 
 const reduxStore = configureStore(window.REDUX_INITIAL_STATE);
 
+const history = syncHistoryWithStore(browserHistory, reduxStore);
+
 ReactDOM.render(
   <ReduxProvider store={reduxStore}>
-    <MainLayout />
+    <Router history={history}>
+      {getRoutes(reduxStore)}
+    </Router>
   </ReduxProvider>,
   document.getElementById('app'),
 );

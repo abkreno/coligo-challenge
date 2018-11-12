@@ -1,5 +1,5 @@
-import announcementsState from './announcements';
+import announcmentsState from './announcments';
 
 export default {
-  announcementsState,
+  announcmentsState,
 };
