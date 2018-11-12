@@ -11,12 +11,10 @@ const AnnouncementList = ({ announcements }) => (
 );
 
 AnnouncementList.propTypes = {
-  announcements: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.number.isRequired,
-      text: PropTypes.string.isRequired
-    }).isRequired
-  ).isRequired,
+  announcements: PropTypes.arrayOf(PropTypes.shape({
+    id: PropTypes.number.isRequired,
+    text: PropTypes.string.isRequired,
+  }).isRequired).isRequired,
 };
 
 export default AnnouncementList;

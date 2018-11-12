@@ -1,1 +1,5 @@
-export { default as announcementsState } from './announcements';
+import announcementsState from './announcements';
+
+export default {
+  announcementsState,
+};

@@ -8,8 +8,7 @@ const Announcement = ({ text }) => (
 );
 
 Announcement.propTypes = {
-  completed: PropTypes.bool.isRequired,
-  text: PropTypes.string.isRequired
+  text: PropTypes.string.isRequired,
 };
 
 export default Announcement;

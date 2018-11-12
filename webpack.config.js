@@ -4,7 +4,7 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const extractPlugin = new ExtractTextPlugin({
-  filename: './style.css'
+  filename: './style.css',
 });
 
 module.exports = {
@@ -33,25 +33,25 @@ module.exports = {
     rules: [{
       test: /\.(jpg|png|gif|svg)$/,
       use: [
-      {
-        loader: 'file-loader',
-        options: {
-          name: '[name].[ext]',
-          outputPath: './assets/',
-        }
-      }]
+        {
+          loader: 'file-loader',
+          options: {
+            name: '[name].[ext]',
+            outputPath: './assets/',
+          },
+        }],
     }, {
       test: /\.(css|scss)$/,
       use: extractPlugin.extract({
         use: ['css-loader', 'sass-loader', 'postcss-loader'],
         fallback: 'style-loader',
-      })
+      }),
     }, {
       test: /\.(js|jsx)$/,
       exclude: /node_modules/,
       use: {
         loader: 'babel-loader',
       },
-    }]
+    }],
   },
 };
