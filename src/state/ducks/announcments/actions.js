@@ -9,7 +9,13 @@ export const setAnnouncments = announcments => ({
   announcments,
 });
 
+export const addAnnouncement = announcment => ({
+  type: types.ADD_ANNOUNCMENT,
+  announcment,
+});
+
 export default {
   fetchAnnouncments,
   setAnnouncments,
+  addAnnouncement,
 };
