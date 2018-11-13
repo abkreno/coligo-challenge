@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, IndexRoute } from 'react-router';
 import MainLayout from './layouts/MainLayout';
-import { requireAuth } from './containers/RequireAuth';
+import { requireAuth } from './requireAuth';
 import Dashboard from './pages/Dashboard';
 
 export default () => (

@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import Home from '../pages/Home';
-import { loginUser, logoutUser } from '../state/ducks/user/actions';
+import Home from './pages/Home';
+import { loginUser, logoutUser } from './state/ducks/user/actions';
 
 export const requireAuth = (component) => {
   const AuthComponent = (props) => {
