@@ -1,23 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Link from './Link';
 
-const Sider = ({ links }) => (
+const Sider = ({ children }) => (
   <div>
-    <ul>
-      {links.map((link, idx) => (
-        <Link key={idx} {...link} />
-      ))}
-    </ul>
-
+    {children}
   </div>
 );
 
 Sider.propTypes = {
-  links: PropTypes.arrayOf(PropTypes.shape({
-    text: PropTypes.string.isRequired,
-    icon: PropTypes.string.isRequired,
-  }).isRequired).isRequired,
+  children: PropTypes.object.isRequired,
 };
 
 export default Sider;
