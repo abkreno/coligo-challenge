@@ -1,17 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import connectAuth from '../connectAuth';
 
-const Home = ({ onLoginClick }) => (
+const Home = ({ login }) => (
   <div>
     <div>
       <h3>Home Page</h3>
-      <button onClick={onLoginClick}>Login</button>
+      <button onClick={login}>Login</button>
     </div>
   </div>
 );
 
 Home.propTypes = {
-  onLoginClick: PropTypes.func.isRequired,
+  login: PropTypes.func.isRequired,
 };
 
-export default Home;
+export default connectAuth(Home);
