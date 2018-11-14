@@ -19,6 +19,7 @@
         "extensions": [".js", ".jsx"] 
       }
     ],
-    "react/forbid-prop-types": [false]
+    "react/forbid-prop-types": [false],
+    "react/no-array-index-key": 0
   }
 }
