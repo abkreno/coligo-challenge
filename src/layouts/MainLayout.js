@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import withAuth from '../withAuth';
 
 const MainLayout = ({ children }) => (
   <div>
@@ -14,4 +15,4 @@ MainLayout.propTypes = {
   children: PropTypes.object.isRequired,
 };
 
-export default MainLayout;
+export default withAuth(MainLayout);

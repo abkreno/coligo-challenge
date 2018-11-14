@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import connectAuth from '../connectAuth';
+import withAuth from '../withAuth';
 
 const Home = ({ login }) => (
   <div>
@@ -15,4 +15,4 @@ Home.propTypes = {
   login: PropTypes.func.isRequired,
 };
 
-export default connectAuth(Home);
+export default withAuth(Home);

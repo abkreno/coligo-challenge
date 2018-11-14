@@ -1,7 +1,8 @@
 import { connect } from 'react-redux';
 import { loginUser, logoutUser } from './state/ducks/user/actions';
 
-const connectAuth = (Component) => {
+// A HOC That takes a component and connects it to the auth state
+const withAuth = (Component) => {
   const mapStateToProps = state => ({
     isLoggedIn: state.userState.user.isLoggedIn,
   });
@@ -15,4 +16,4 @@ const connectAuth = (Component) => {
 };
 
 
-export default connectAuth;
+export default withAuth;
