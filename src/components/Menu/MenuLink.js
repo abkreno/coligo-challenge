@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const MenuLink = ({ icon, text, onClick }) => (
-  <li>
+  <li className="cg-menu-link">
     <button onClick={onClick} >{icon} {text}</button>
   </li>
 );

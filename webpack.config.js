@@ -16,7 +16,7 @@ module.exports = {
     publicPath: '/',
   },
   devServer: {
-    contentBase: path.resolve(__dirname, 'public/assets'),
+    contentBase: path.resolve(__dirname, '/'),
     stats: 'errors-only',
     open: true, // to open the browser tab automatically
     port: 8080,

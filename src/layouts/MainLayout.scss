@@ -7,8 +7,8 @@
     grid-template-areas:
       'sider header'
       'sider content';
-    grid-template-rows: 80px 1fr;
-    grid-template-columns: 200px 1fr;    
+    grid-template-rows: auto 1fr;
+    grid-template-columns: auto 1fr;    
     .layout-sider-container {
       grid-area: sider;
     }
@@ -26,7 +26,7 @@
         'header'
         'sider'
         'content';
-      grid-template-rows: 80px 50px 1fr;
+      grid-template-rows: auto auto 1fr;
       grid-template-columns: 1fr;      
     }
   }

@@ -2,8 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import defaultAvatar from '../assets/img/avatar.jpg';
 import DropDown from '../components/DropDown';
-import Menu from '../components/Menu';
-import MenuLink from '../components/MenuLink';
+import { Menu, MenuLink } from '../components/Menu';
 
 const MainHeader = ({ isLoggedIn, login, logout }) => (
   <div>

@@ -2,11 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Menu = ({ children }) => (
-  <div>
-    <ul>
-      {children}
-    </ul>
-
+  <div className="cg-menu">
+    {children}
   </div>
 );
 
