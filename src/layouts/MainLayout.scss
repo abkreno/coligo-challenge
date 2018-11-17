@@ -1,3 +1,34 @@
-.main-layout {
-  background: red;
+.layout-container {
+  height: 100%;
+  .layout {
+    height: 100%;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-areas:
+      'sider header'
+      'sider content';
+    grid-template-rows: 80px 1fr;
+    grid-template-columns: 200px 1fr;    
+    .layout-sider-container {
+      grid-area: sider;
+    }
+    .layout-header-container {
+      grid-area: header;
+    }
+    .layout-content-container {
+      grid-area: content;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .layout {
+      grid-template-areas: 
+        'header'
+        'sider'
+        'content';
+      grid-template-rows: 80px 50px 1fr;
+      grid-template-columns: 1fr;      
+    }
+  }
 }
+
