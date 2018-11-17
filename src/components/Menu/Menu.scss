@@ -1,0 +1,23 @@
+.cg-menu {
+  list-style: none;
+  .cg-menu-link {
+    width: 100%;
+    button {
+      width: 100%;
+      border: none;
+      border-left: 5px solid transparent;
+      background: transparent;
+      cursor: pointer;
+      color: white;
+      padding: 20px 30px;
+      font-weight: bold;
+      font-size: 1em;
+      &:hover, &:focus {
+        outline: none;
+        background: white;
+        color: rgb(23, 218, 211);
+        border-image: linear-gradient(#378994, rgb(36, 90, 128)) 1 100%;
+      }
+    }
+  }
+}

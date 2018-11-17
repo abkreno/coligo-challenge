@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const MenuLink = ({ icon, text, onClick }) => (
   <li className="cg-menu-link">
-    <button onClick={onClick} >{icon} {text}</button>
+    <button onClick={onClick} ><FontAwesomeIcon icon={icon} /> {text}</button>
   </li>
 );
 
