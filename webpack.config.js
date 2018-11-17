@@ -22,6 +22,7 @@ module.exports = {
     port: 8080,
     compress: true,
     historyApiFallback: true,
+    watchContentBase: true,
   },
   context: path.resolve(__dirname, 'src'),
   plugins: [
