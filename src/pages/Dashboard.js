@@ -21,9 +21,10 @@ const Dashboard = () => (
       </div>
       <div className="banner-img" />
     </div>
-
-    <AnnouncmentList />
-    <QuizList />
+    <div className="dashboard-content">
+      <AnnouncmentList className="dashboard-announcement-list" />
+      <QuizList className="dashboard-quizzes-list" />
+    </div>
   </div>
 );
 

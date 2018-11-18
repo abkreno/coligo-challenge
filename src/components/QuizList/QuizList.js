@@ -12,9 +12,9 @@ class QuizList extends React.Component {
   }
 
   render() {
-    const { quizzes, loading } = this.props;
+    const { quizzes, loading, className } = this.props;
     return (
-      <Card title="Quizzes" description="We educate warirors! Keep updated :)" link="All">
+      <Card className={className} title="Quizzes" description="We educate warirors! Keep updated :)" link="All">
         {/* <button onClick={() => addQuiz({
           id: quizzes.length + 1,
           text: `Quiz ${quizzes.length + 1}`,
@@ -43,6 +43,11 @@ QuizList.propTypes = {
     dueDate: PropTypes.string.isRequired,
   }).isRequired).isRequired,
   fetchQuizzes: PropTypes.func.isRequired,
+  className: PropTypes.string,
+};
+
+QuizList.defaultProps = {
+  className: '',
 };
 
 export default QuizList;

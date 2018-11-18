@@ -12,9 +12,9 @@ class AnnouncmentList extends React.Component {
   }
 
   render() {
-    const { announcments, loading } = this.props;
+    const { announcments, loading, className } = this.props;
     return (
-      <Card title="Announcements" description="We educate warirors! Keep updated :)" link="All">
+      <Card className={className} title="Announcements" description="We educate warirors! Keep updated :)" link="All">
         {/* <button onClick={() => addAnnouncement({
           id: announcments.length + 1,
           text: `Announcement ${announcments.length + 1}`,
@@ -41,6 +41,12 @@ AnnouncmentList.propTypes = {
     subject: PropTypes.string.isRequired,
   }).isRequired).isRequired,
   fetchAnnouncments: PropTypes.func.isRequired,
+  className: PropTypes.string,
 };
+
+AnnouncmentList.defaultProps = {
+  className: '',
+};
+
 
 export default AnnouncmentList;

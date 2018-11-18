@@ -3,7 +3,7 @@
     display: flex;
     background: white;
     border-radius: 15px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     .banner-img {
       width: 30%;
       height: 200px;     
@@ -43,6 +43,17 @@
       }
     }
   }
+  .dashboard-content {
+    display: flex;
+    .dashboard-announcement-list {
+      flex: 9;
+      margin-right: 10px;
+    }
+    .dashboard-quizzes-list {
+      flex: 3;
+      margin-left: 10px;
+    }
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -57,6 +68,22 @@
       .cg-btn {
         margin: auto;
       }
+    }
+  }
+}
+
+@media only screen and (max-width: 1004px) {
+  /* For mobile phones: */
+  .dashboard-content {
+    flex-direction: column;
+    .dashboard-announcement-list {
+      flex: 9;
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+    .dashboard-quizzes-list {
+      flex: 3;
+      margin-left: 0;
     }
   }
 }
