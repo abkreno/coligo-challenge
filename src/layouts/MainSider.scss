@@ -1,0 +1,11 @@
+.main-sider-search {
+  display: none;
+}
+@media only screen and (max-width: 575px) {
+  /* For mobile phones: */
+  .main-sider-search {
+    display: block;
+    width: fit-content;
+    margin: 30px auto;
+  }
+}

@@ -44,3 +44,12 @@
     }  
   }
 }
+
+@media only screen and (max-width: 575px) {
+  /* For mobile phones: */
+  .main-header-right {
+    .cg-input-container {
+      display: none;
+    }
+  }
+}
