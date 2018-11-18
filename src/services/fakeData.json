@@ -1,7 +1,16 @@
 [{
   "id": 1,
-  "text": "Hello"
+  "owner": "Mr.Ahmed Mostafa",
+  "subject": "Math 101",
+  "text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore laudantium esse magni! Necessitatibus fugiat inventore modi cumque illum laudantium quia aspernatur esse! Neque id iusto necessitatibus libero sapiente dolorum beatae."
 }, {
   "id": 2,
-  "text": "Hello World"
+  "owner": "Mrs.Salma Ahmed",
+  "subject": "Physics 102",
+  "text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore laudantium esse magni! Necessitatibus fugiat inventore modi cumque illum laudantium quia aspernatur esse! Neque id iusto necessitatibus libero sapiente dolorum beatae."
+}, {
+  "id": 3,
+  "owner": "School Managment",
+  "subject": "Managment",
+  "text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore laudantium esse magni! Necessitatibus fugiat inventore modi cumque illum laudantium quia aspernatur esse! Neque id iusto necessitatibus libero sapiente dolorum beatae. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore laudantium esse magni! Necessitatibus fugiat inventore modi cumque illum laudantium quia aspernatur esse! Neque id iusto necessitatibus libero sapiente dolorum beatae."
 }]

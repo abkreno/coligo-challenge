@@ -1,8 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Announcment from './Announcment';
-import Card from './Card/Card';
-import Loader from './Loader/Loader';
+import Announcment from '../Announcment';
+import Card from '../Card/Card';
+import Loader from '../Loader/Loader';
+import './AnnouncementList.scss';
 
 class AnnouncmentList extends React.Component {
   componentDidMount() {
@@ -22,7 +23,7 @@ class AnnouncmentList extends React.Component {
           Add Announcment
         </button> */}
         { loading ? <Loader /> :
-        <ul>
+        <ul className="cg-announcement-list">
           {announcments.map(announcment => (
             <Announcment key={announcment.id} {...announcment} />
           ))}
@@ -36,6 +37,8 @@ AnnouncmentList.propTypes = {
   announcments: PropTypes.arrayOf(PropTypes.shape({
     id: PropTypes.number.isRequired,
     text: PropTypes.string.isRequired,
+    owner: PropTypes.string.isRequired,
+    subject: PropTypes.string.isRequired,
   }).isRequired).isRequired,
   fetchAnnouncments: PropTypes.func.isRequired,
 };
