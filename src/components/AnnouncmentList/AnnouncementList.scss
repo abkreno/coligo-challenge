@@ -1,0 +1,14 @@
+.cg-announcement-list {
+  list-style: none;
+  padding: 25px;
+  padding-bottom: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .cg-announcement-list {
+    padding: 0;
+    padding-top: 20px;
+  }
+}
+

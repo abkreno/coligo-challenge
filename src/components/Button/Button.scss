@@ -1,0 +1,28 @@
+.cg-btn {
+  padding: 10px 20px;
+  border: none;
+  background: none;
+  border-radius: 5px;
+  background: #4BCEC3;
+  color: white;
+  font-weight: bold;
+  transition: 200ms all;
+  cursor: pointer;
+  outline: none;
+  &:hover {
+    color: #4BCEC3;
+    background: white;
+  }
+  &.cg-btn-invert {
+    background: white;
+    color: #4BCEC3;
+    border: 1px solid #4BCEC3;
+    &:hover {
+      background: #4BCEC3;
+      color: white;
+    }
+  }
+  .cg-btn--icon {
+    margin-right: 5px;
+  }
+}

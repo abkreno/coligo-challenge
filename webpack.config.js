@@ -16,12 +16,13 @@ module.exports = {
     publicPath: '/',
   },
   devServer: {
-    contentBase: path.resolve(__dirname, 'public/assets'),
+    contentBase: path.resolve(__dirname, '/public/assets'),
     stats: 'errors-only',
     open: true, // to open the browser tab automatically
     port: 8080,
     compress: true,
     historyApiFallback: true,
+    watchContentBase: true,
   },
   context: path.resolve(__dirname, 'src'),
   plugins: [
@@ -39,7 +40,7 @@ module.exports = {
           loader: 'file-loader',
           options: {
             name: '[name].[ext]',
-            outputPath: './assets/',
+            outputPath: './assets/img/',
           },
         }],
     }, {

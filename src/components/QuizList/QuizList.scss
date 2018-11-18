@@ -1,0 +1,12 @@
+.cg-quiz-list {
+  list-style: none;
+  padding: 20px 0;
+  padding-bottom: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .cg-quiz-list {
+  }
+}
+

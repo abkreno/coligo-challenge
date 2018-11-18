@@ -1,0 +1,90 @@
+.dashboard-container {
+  .banner {
+    display: flex;
+    background: white;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    .banner-img {
+      width: 30%;
+      height: 200px;     
+      margin: auto; 
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      background-image: url('/assets/img/study.png');
+    }
+    .banner-left {
+      display: flex;
+      padding: 20px 35px;
+      flex-direction: column;
+      .banner-title {
+        margin-bottom: 5px;
+        background: -webkit-linear-gradient(#12517D, #378994);
+        background-clip: text; 
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .banner-subtitle {
+        margin-bottom: 20px;
+        font-weight: lighter;
+        color: #898D8C;
+      }
+      .banner-qoute {
+        margin-bottom: 15px;
+        color: #C7CDCD;
+        font-style: italic;
+        font-weight: lighter;
+      }  
+      .cg-btn {
+        width: fit-content;
+        font-size: 1rem;
+        font-weight: bold;
+        padding: 10px 25px;
+      }
+    }
+  }
+  .dashboard-content {
+    display: flex;
+    .dashboard-announcement-list {
+      flex: 9;
+      margin-right: 10px;
+    }
+    .dashboard-quizzes-list {
+      flex: 3;
+      margin-left: 10px;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .banner {
+    flex-direction: column-reverse;
+    .banner-img {
+      width: 100% !important;
+    }
+    .banner-left {
+      text-align: center;
+      .cg-btn {
+        margin: auto;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1004px) {
+  /* For mobile phones: */
+  .dashboard-content {
+    flex-direction: column;
+    .dashboard-announcement-list {
+      flex: 9;
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+    .dashboard-quizzes-list {
+      flex: 3;
+      margin-left: 0;
+    }
+  }
+}
+

@@ -1,0 +1,30 @@
+.cg-card{
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  .cg-card-header {
+    display: flex;
+    justify-content: space-between;
+    .cg-card-header-left {
+      .cg-card-header-title {
+        color: #777B7A;
+        font-weight: bolder;
+      }
+      .cg-card-header-desc {
+        color: #D4D8D9;
+        font-weight: lighter;
+        font-size: 0.8rem;
+      }
+    }
+    .cg-card-header-right {
+      a {
+        color: rgb(67, 207, 203);
+        text-decoration: none;
+        font-weight: bold;
+      }
+    }
+  }
+  .cg-card-content {
+    padding: 10px;
+  }
+}

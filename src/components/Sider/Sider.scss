@@ -1,0 +1,28 @@
+.cg-sider {
+  background-image: linear-gradient(#12517D, #378994);
+  height: 100%;
+  text-align: center;
+  color: white;
+  box-sizing: border-box;
+  overflow-y: auto;
+  min-width: 200px;
+  max-width: 200px;
+  .cg-sider-title {
+    width: 100%;
+    padding: 20px 0;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .cg-sider {
+    max-width: 100%;
+    height: 0px;
+    transition: 200ms all;
+    &.cg-sider-open {
+      transition: 200ms all;
+      height: fit-content;
+    }
+  }
+}

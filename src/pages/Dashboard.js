@@ -1,11 +1,29 @@
 import React from 'react';
 import AnnouncmentList from '../containers/AnnouncmentList';
+import QuizList from '../containers/QuizList';
+import './Dashboard.scss';
+import Button from '../components/Button';
 
 const Dashboard = () => (
-  <div>
-    <div>
-      <h3>Dashboard Page</h3>
-      <AnnouncmentList />
+  <div className="dashboard-container">
+    <div className="banner">
+      <div className="banner-left">
+        <h1 className="banner-title">
+          EXAMS TIME
+        </h1>
+        <h5 className="banner-subtitle">
+          {"Here we are, Are you ready to fight? Don't worry, we prepared some tips to be ready for your exams."}
+        </h5>
+        <small className="banner-qoute">
+          {'"Nothing happens, until something moves" -Albert Einstein'}
+        </small>
+        <Button>View exams tips</Button>
+      </div>
+      <div className="banner-img" />
+    </div>
+    <div className="dashboard-content">
+      <AnnouncmentList className="dashboard-announcement-list" />
+      <QuizList className="dashboard-quizzes-list" />
     </div>
   </div>
 );
