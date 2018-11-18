@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Avatar from './Avatar';
 
 const Announcment = ({ text }) => (
   <li>
-    {text}
+    <Avatar src="/assets/img/avatar.jpg" alt="" />  {text}
   </li>
 );
 

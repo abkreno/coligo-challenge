@@ -13,6 +13,8 @@ import {
   faEnvelope,
   faSearch,
   faBars,
+  faSpinner,
+  faCog,
 } from '@fortawesome/free-solid-svg-icons';
 
 import './assets/img/avatar.jpg';
@@ -33,4 +35,6 @@ library.add(
   faEnvelope,
   faSearch,
   faBars,
+  faSpinner,
+  faCog,
 );

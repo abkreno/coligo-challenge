@@ -28,9 +28,35 @@ const announcments = (state = [], action) => {
   }
 };
 
+const fetchAnnouncmentsStatus = (state = { loading: false, error: '' }, action) => {
+  switch (action.type) {
+    case types.FETCH_ANNOUNCMENTS_BEGIN:
+      return {
+        ...state,
+        loading: true,
+        error: '',
+      };
+    case types.FETCH_ANNOUNCMENTS_SUCCESS:
+      return {
+        ...state,
+        loading: false,
+        error: '',
+      };
+    case types.FETCH_ANNOUNCMENTS_ERROR:
+      return {
+        ...state,
+        loading: false,
+        error: 'Failed To Fetch Announcements',
+      };
+
+    default:
+      return state;
+  }
+};
 
 const announcmentsReducer = combineReducers({
   announcments,
+  fetchAnnouncmentsStatus,
 });
 
 export default announcmentsReducer;
