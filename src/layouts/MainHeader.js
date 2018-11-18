@@ -14,7 +14,7 @@ const MainHeader = ({ isLoggedIn, login, logout }) => (
           {[<MenuLink key={0} onClick={logout} text="Logout" icon="logout" />]}
         </Menu>)}
     >
-      <img src={defaultAvatar} alt="Default Avatar" />
+      {/* <img src={defaultAvatar} alt="Default Avatar" /> */}
     </DropDown>}
   </div>
 );

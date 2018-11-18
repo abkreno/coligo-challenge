@@ -4,8 +4,19 @@
   text-align: center;
   color: white;
   box-sizing: border-box;
+  overflow-y: auto;
+  min-width: 200px;
+  max-width: 200px;
   .cg-sider-title {
     width: 100%;
     padding: 20px 0;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .cg-sider {
+    max-width: 100%;
   }
 }

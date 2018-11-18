@@ -5,7 +5,7 @@ import './Sider.scss';
 
 const Sider = ({ title, links, className }) => (
   <div className={`cg-sider ${className}`}>
-    <h3 className="cg-sider-title">{title}</h3>
+    <h2 className="cg-sider-title">{title}</h2>
     <Menu>
       {links.map((link, idx) => <MenuLink key={idx} {...link} />)}
     </Menu>

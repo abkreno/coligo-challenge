@@ -3,20 +3,33 @@
   .cg-menu-link {
     width: 100%;
     button {
-      width: 100%;
       border: none;
       border-left: 5px solid transparent;
       background: transparent;
       cursor: pointer;
       color: white;
-      padding: 20px 30px;
+      padding: 20px 15px;
       font-weight: bold;
       font-size: 1em;
+      width: 100% !important;
+      text-align: left;
+      transition: 200ms all;
+      .cg-menu-link--icon {
+        margin-right: 10px;
+      }
       &:hover, &:focus {
         outline: none;
         background: white;
         color: rgb(23, 218, 211);
         border-image: linear-gradient(#378994, rgb(36, 90, 128)) 1 100%;
+      }
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .cg-menu-link {
+      button {
+        text-align: center;
       }
     }
   }

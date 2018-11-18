@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const MenuLink = ({ icon, text, onClick }) => (
   <li className="cg-menu-link">
-    <button onClick={onClick} ><FontAwesomeIcon icon={icon} /> {text}</button>
+    <button onClick={onClick} ><FontAwesomeIcon className="cg-menu-link--icon" icon={icon} /> {text}</button>
   </li>
 );
 
