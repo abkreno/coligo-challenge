@@ -4,9 +4,11 @@
   "description": "React+Redux app challenge",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server",
+    "start": "node server.js",
+    "dev": "webpack-dev-server",
     "build": "webpack",
     "build-prod": "webpack -p",
+    "heroku-postbuild": "webpack -p",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint src",
     "lint-fixup": "eslint src --ext .js,.jsx --fix"
@@ -23,6 +25,7 @@
   "homepage": "https://github.com/abkreno/coligo-challenge#readme",
   "dependencies": {
     "babel-polyfill": "^6.26.0",
+    "express": "^4.16.4",
     "@fortawesome/fontawesome-svg-core": "^1.2.8",
     "@fortawesome/free-brands-svg-icons": "^5.5.0",
     "@fortawesome/free-regular-svg-icons": "^5.5.0",
