@@ -22,7 +22,7 @@ class DropDown extends React.Component {
       </div>
     );
   }
-} 
+}
 
 DropDown.propTypes = {
   children: PropTypes.object.isRequired,

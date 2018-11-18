@@ -10,6 +10,7 @@ const MainLayout = ({
   isLoggedIn,
   login,
   logout,
+  toggleSideBar,
 }) => (
   <div className="layout-container">
     <div className="layout">
@@ -17,7 +18,12 @@ const MainLayout = ({
         <MainSider isLoggedIn={isLoggedIn} />
       </div>
       <div className="layout-header-container">
-        <MainHeader isLoggedIn={isLoggedIn} login={login} logout={logout} />
+        <MainHeader
+          isLoggedIn={isLoggedIn}
+          login={login}
+          logout={logout}
+          onBarsClick={toggleSideBar}
+        />
       </div>
       <div className="layout-content-container">
         {children}
@@ -31,6 +37,7 @@ MainLayout.propTypes = {
   isLoggedIn: PropTypes.bool.isRequired,
   login: PropTypes.func.isRequired,
   logout: PropTypes.func.isRequired,
+  toggleSideBar: PropTypes.func.isRequired,
 };
 
 export default withAuth(MainLayout);

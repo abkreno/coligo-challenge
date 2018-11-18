@@ -8,7 +8,8 @@
   }
   .cg-drop-down-menu {
     background-image: linear-gradient(#12517D, #378994);
-    width: fit-content;
+    width: max-content;
+    right: 0;
     position: absolute;
     height: 0px;
     transition: 200ms all;
