@@ -1,0 +1,36 @@
+.dashboard-container {
+  .banner {
+    background: white;
+    border-radius: 15px;
+    padding: 20px 35px;
+    margin-bottom: 30px;
+    .banner-left {
+      display: flex;
+      flex-direction: column;
+      .banner-title {
+        margin-bottom: 5px;
+        background: -webkit-linear-gradient(#12517D, #378994);
+        background-clip: text; 
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .banner-subtitle {
+        margin-bottom: 20px;
+        font-weight: lighter;
+        color: #898D8C;
+      }
+      .banner-qoute {
+        margin-bottom: 15px;
+        color: #C7CDCD;
+        font-style: italic;
+        font-weight: lighter;
+      }  
+      .cg-btn {
+        width: fit-content;
+        font-size: 1rem;
+        font-weight: bold;
+        padding: 10px 25px;
+      }
+    }
+  }
+}

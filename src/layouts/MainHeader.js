@@ -44,7 +44,7 @@ const MainHeader = ({
               {[<MenuLink key={0} onClick={logout} text="Logout" icon="sign-out-alt" />]}
             </Menu>)}
         >
-          <Avatar src="/assets/avatar.jpg" alt="Default Avatar" />
+          <Avatar src="/assets/img/avatar.jpg" alt="Default Avatar" />
           {/* <img  /> */}
         </DropDown>}
       </div>
