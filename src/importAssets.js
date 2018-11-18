@@ -15,6 +15,8 @@ import {
   faBars,
   faSpinner,
   faCog,
+  faCalendarCheck,
+  faHourglassHalf,
 } from '@fortawesome/free-solid-svg-icons';
 
 import './assets/img/avatar.jpg';
@@ -37,4 +39,6 @@ library.add(
   faBars,
   faSpinner,
   faCog,
+  faCalendarCheck,
+  faHourglassHalf,
 );
