@@ -12,12 +12,13 @@ const getSiderLinks = isLoggedIn => (isLoggedIn ?
     { text: 'Announcement', icon: 'bullhorn' }] :
   [{ text: 'Home', icon: 'home' }]);
 
-const MainSider = ({ isLoggedIn }) => (
-  <Sider title="Coligo" links={getSiderLinks(isLoggedIn)} />
+const MainSider = ({ isLoggedIn, isOpen }) => (
+  <Sider title="Coligo" isOpen={isOpen} links={getSiderLinks(isLoggedIn)} />
 );
 
 MainSider.propTypes = {
   isLoggedIn: PropTypes.bool.isRequired,
+  isOpen: PropTypes.bool.isRequired,
 };
 
 export default MainSider;
