@@ -1,23 +1,24 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Announcment from './Announcment';
+import Card from './Card/Card';
 
-const AnnouncmentList = ({ announcments, addAnnouncement }) => (
-  <div>
-    <button onClick={() => addAnnouncement({
+const AnnouncmentList = ({ announcments }) => (
+  <Card title="Announcements" description="We educate warirors! Keep updated :)" link="All">
+    {/* <button onClick={() => addAnnouncement({
       id: announcments.length + 1,
       text: `Announcement ${announcments.length + 1}`,
     })}
     >
       Add Announcment
-    </button>
+    </button> */}
     <ul>
       {announcments.map(announcment => (
         <Announcment key={announcment.id} {...announcment} />
       ))}
     </ul>
 
-  </div>
+  </Card>
 );
 
 AnnouncmentList.propTypes = {
@@ -25,7 +26,7 @@ AnnouncmentList.propTypes = {
     id: PropTypes.number.isRequired,
     text: PropTypes.string.isRequired,
   }).isRequired).isRequired,
-  addAnnouncement: PropTypes.func.isRequired,
+  // addAnnouncement: PropTypes.func.isRequired,
 };
 
 export default AnnouncmentList;

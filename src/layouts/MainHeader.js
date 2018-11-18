@@ -17,35 +17,37 @@ const MainHeader = ({
   logout,
   onBarsClick,
 }) => (
-  <div className="main-header">
-    <div className="main-header-left">
-      <FontAwesomeIcon className="main-header-bars" onClick={onBarsClick} icon="bars" size="2x" />
-      <h2 className="main-header-title">
-        {isLoggedIn ? 'Welcome Tanya,' : 'Home'}
-      </h2>
-    </div>
-    <div className="main-header-right">
-      {!isLoggedIn && <Button type="invert" icon="sign-in-alt" onClick={login}>Login</Button>}
-      {isLoggedIn &&
-      <Input icon="search" className="main-header-search" value="" placeholder="Search" />}
-      {isLoggedIn &&
-      <Badge className="main-header-badge" number={1}>
-        <FontAwesomeIcon className="cg-menu-link--icon" size="2x" icon="bell" />
-      </Badge>}
-      {isLoggedIn &&
-      <Badge className="main-header-badge" number={3}>
-        <FontAwesomeIcon className="cg-menu-link--icon" size="2x" icon="envelope" />
-      </Badge>}
-      {isLoggedIn &&
-      <DropDown
-        menu={(
-          <Menu>
-            {[<MenuLink key={0} onClick={logout} text="Logout" icon="sign-out-alt" />]}
-          </Menu>)}
-      >
-        <Avatar src="/assets/avatar.jpg" alt="Default Avatar" />
-        {/* <img  /> */}
-      </DropDown>}
+  <div className="main-header-container">
+    <div className="main-header">
+      <div className="main-header-left">
+        <FontAwesomeIcon className="main-header-bars" onClick={onBarsClick} icon="bars" size="2x" />
+        <h2 className="main-header-title">
+          {isLoggedIn ? 'Welcome Tanya,' : 'Home'}
+        </h2>
+      </div>
+      <div className="main-header-right">
+        {!isLoggedIn && <Button type="invert" icon="sign-in-alt" onClick={login}>Login</Button>}
+        {isLoggedIn &&
+        <Input icon="search" className="main-header-search" value="" placeholder="Search" />}
+        {isLoggedIn &&
+        <Badge className="main-header-badge" number={1}>
+          <FontAwesomeIcon className="cg-menu-link--icon" size="2x" icon="bell" />
+        </Badge>}
+        {isLoggedIn &&
+        <Badge className="main-header-badge" number={3}>
+          <FontAwesomeIcon className="cg-menu-link--icon" size="2x" icon="envelope" />
+        </Badge>}
+        {isLoggedIn &&
+        <DropDown
+          menu={(
+            <Menu>
+              {[<MenuLink key={0} onClick={logout} text="Logout" icon="sign-out-alt" />]}
+            </Menu>)}
+        >
+          <Avatar src="/assets/avatar.jpg" alt="Default Avatar" />
+          {/* <img  /> */}
+        </DropDown>}
+      </div>
     </div>
   </div>
 );

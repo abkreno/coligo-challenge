@@ -1,0 +1,23 @@
+.cg-card{
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  .cg-card-header {
+    display: flex;
+    justify-content: space-between;
+    .cg-card-header-left {
+      .cg-card-header-title {
+
+      }
+      .cg-card-header-desc {
+
+      }
+    }
+    .cg-card-header-right {
+  
+    }
+  }
+  .cg-card-content {
+
+  }
+}
