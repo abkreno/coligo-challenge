@@ -1,5 +1,6 @@
 import types from './types';
-import fakeAnnouncementsService from '../../../services/fakeAnnouncementsService';
+// import fakeAnnouncementsService from '../../../services/fakeAnnouncementsService';
+import announcementsService from '../../../services/announcementsService';
 
 export const fetchAnnouncmentsBegin = () => ({
   type: types.FETCH_ANNOUNCMENTS_BEGIN,
@@ -21,7 +22,7 @@ export const fetchAnnouncmentsError = () => ({
 export const fetchAnnouncments = () => async (dispatch) => {
   dispatch(fetchAnnouncmentsBegin());
   try {
-    const announcments = await fakeAnnouncementsService();
+    const announcments = await announcementsService();
     dispatch(setAnnouncments(announcments));
     dispatch(fetchAnnouncmentsSuccess());
   } catch (error) {

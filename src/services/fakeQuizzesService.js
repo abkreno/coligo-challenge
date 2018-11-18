@@ -3,7 +3,7 @@ import fakeQuizzesData from './fakeQuizzesData.json';
 const fakeQuizzesService = async () => {
   const quizzes = fakeQuizzesData;
   return new Promise((resolve) => {
-    setTimeout(() => resolve(quizzes), 0);
+    setTimeout(() => resolve(quizzes), 1500);
   });
 };
 

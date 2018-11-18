@@ -1,5 +1,6 @@
 import types from './types';
-import fakeQuizzesService from '../../../services/fakeQuizzesService';
+// import fakeQuizzesService from '../../../services/fakeQuizzesService';
+import quizzesService from '../../../services/quizzesService';
 
 export const fetchQuizzesBegin = () => ({
   type: types.FETCH_QUIZZES_BEGIN,
@@ -21,7 +22,7 @@ export const fetchQuizzesError = () => ({
 export const fetchQuizzes = () => async (dispatch) => {
   dispatch(fetchQuizzesBegin());
   try {
-    const quizzes = await fakeQuizzesService();
+    const quizzes = await quizzesService();
     dispatch(setQuizzes(quizzes));
     dispatch(fetchQuizzesSuccess());
   } catch (error) {
