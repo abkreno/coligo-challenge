@@ -1,11 +1,21 @@
 .dashboard-container {
   .banner {
+    display: flex;
     background: white;
     border-radius: 15px;
-    padding: 20px 35px;
     margin-bottom: 30px;
+    .banner-img {
+      width: 30%;
+      height: 200px;     
+      margin: auto; 
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      background-image: url('/assets/img/study.png');
+    }
     .banner-left {
       display: flex;
+      padding: 20px 35px;
       flex-direction: column;
       .banner-title {
         margin-bottom: 5px;
@@ -34,3 +44,20 @@
     }
   }
 }
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .banner {
+    flex-direction: column-reverse;
+    .banner-img {
+      width: 100% !important;
+    }
+    .banner-left {
+      text-align: center;
+      .cg-btn {
+        margin: auto;
+      }
+    }
+  }
+}
+

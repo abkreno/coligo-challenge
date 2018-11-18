@@ -2,6 +2,11 @@
   display: none;
 }
 @media only screen and (max-width: 575px) {
+  .main-sider {
+    &.cg-sider-open {
+      padding-bottom: 20px;
+    }
+  }  
   /* For mobile phones: */
   .main-sider-search {
     display: block;

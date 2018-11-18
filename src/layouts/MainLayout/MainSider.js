@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Sider from '../components/Sider/Sider';
+import Sider from '../../components/Sider/Sider';
 import './MainSider.scss';
-import Input from '../components/Input';
+import Input from '../../components/Input';
 
 const getSiderLinks = isLoggedIn => (isLoggedIn ?
   [{ text: 'Dashboard', icon: 'home' },
@@ -14,7 +14,7 @@ const getSiderLinks = isLoggedIn => (isLoggedIn ?
   [{ text: 'Home', icon: 'home' }]);
 
 const MainSider = ({ isLoggedIn, isOpen }) => (
-  <Sider title="Coligo" isOpen={isOpen} links={getSiderLinks(isLoggedIn)}>
+  <Sider className="main-sider" title="Coligo" isOpen={isOpen} links={getSiderLinks(isLoggedIn)}>
     {isLoggedIn &&
     <Input icon="search" className="main-sider-search" value="" placeholder="Search" />}
   </Sider>

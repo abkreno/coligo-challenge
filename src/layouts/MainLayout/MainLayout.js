@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import withAuth from '../withAuth';
+import withAuth from '../../withAuth';
 import './MainLayout.scss';
 import MainHeader from './MainHeader';
 import MainSider from './MainSider';

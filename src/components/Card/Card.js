@@ -12,8 +12,8 @@ const Card = ({
   <div className={`cg-card ${className}`}>
     <div className="cg-card-header">
       <div className="cg-card-header-left">
-        <h3 className="cg-card-title">{title}</h3>
-        <small className="cg-card-desc">{description}</small>
+        <h3 className="cg-card-header-title">{title}</h3>
+        <small className="cg-card-header-desc">{description}</small>
       </div>
       <div className="cg-card-header-right">
         <a href="http://localhost:8080">

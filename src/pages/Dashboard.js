@@ -3,7 +3,6 @@ import AnnouncmentList from '../containers/AnnouncmentList';
 import QuizList from '../containers/QuizList';
 import './Dashboard.scss';
 import Button from '../components/Button';
-import studyImg from '../assets/img/study.png';
 
 const Dashboard = () => (
   <div className="dashboard-container">
@@ -20,10 +19,9 @@ const Dashboard = () => (
         </small>
         <Button>View exams tips</Button>
       </div>
-      <div className="banner-right">
-        <img src={studyImg} alt="Banner Img" />
-      </div>
+      <div className="banner-img" />
     </div>
+
     <AnnouncmentList />
     <QuizList />
   </div>

@@ -2,14 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import defaultAvatar from '../assets/img/avatar.jpg';
-import DropDown from '../components/DropDown';
-import Button from '../components/Button';
+import DropDown from '../../components/DropDown';
+import Button from '../../components/Button';
 
-import { Menu, MenuLink } from '../components/Menu';
-import Avatar from '../components/Avatar';
+import { Menu, MenuLink } from '../../components/Menu';
+import Avatar from '../../components/Avatar';
 import './MainHeader.scss';
-import Badge from '../components/Badge';
-import Input from '../components/Input';
+import Badge from '../../components/Badge';
+import Input from '../../components/Input';
 
 const MainHeader = ({
   isLoggedIn,
