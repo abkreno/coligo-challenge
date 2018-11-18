@@ -1,19 +1,29 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import withAuth from '../withAuth';
+import Button from '../components/Button';
 
-const Home = ({ login, isLoggedIn }) => (
-  <div>
-    <div>
-      <h3>Home Page</h3>
-      <button onClick={login}>Login</button>
-      <h2>Welcome to Coligo <small>({isLoggedIn ? 'Logged In' : 'Logged Out'})</small></h2>
+const Home = ({ login }) => (
+  <div className="dashboard-container">
+    <div className="banner">
+      <div className="banner-left">
+        <h1 className="banner-title">
+          WELCOME TO COLIGO!
+        </h1>
+        <h5 className="banner-subtitle">
+          {"Here we are, Are you ready to fight? Don't worry, we prepared some tips to be ready for your exams."}
+        </h5>
+        <small className="banner-qoute">
+          {'Please login to see your dashboard'}
+        </small>
+        <Button onClick={login}>Login</Button>
+      </div>
+      <div className="banner-img" />
     </div>
   </div>
 );
 
 Home.propTypes = {
-  isLoggedIn: PropTypes.bool.isRequired,
   login: PropTypes.func.isRequired,
 };
 

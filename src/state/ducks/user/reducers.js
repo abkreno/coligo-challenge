@@ -6,7 +6,7 @@ state: {
 }
 */
 
-const user = (state = { isLoggedIn: true }, action) => {
+const user = (state = { isLoggedIn: false }, action) => {
   switch (action.type) {
     case types.LOGIN_USER:
       return { ...state, isLoggedIn: true };
