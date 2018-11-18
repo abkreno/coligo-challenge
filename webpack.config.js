@@ -16,7 +16,7 @@ module.exports = {
     publicPath: '/',
   },
   devServer: {
-    contentBase: path.resolve(__dirname, '/'),
+    contentBase: path.resolve(__dirname, '/public/assets'),
     stats: 'errors-only',
     open: true, // to open the browser tab automatically
     port: 8080,
@@ -40,7 +40,7 @@ module.exports = {
           loader: 'file-loader',
           options: {
             name: '[name].[ext]',
-            outputPath: './assets/',
+            outputPath: './assets/img/',
           },
         }],
     }, {
