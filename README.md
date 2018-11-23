@@ -1,4 +1,4 @@
-# coligo-challenge
+# Coligo Challenge
 A react/redux app challenge 
 
 ### [DEMO](https://calm-tundra-90801.herokuapp.com/)
