@@ -29,7 +29,7 @@ npm run dev
 npm run build
 ```
 
-## Build for production
+## Build for production:
 
 ```
 npm run build-prod
